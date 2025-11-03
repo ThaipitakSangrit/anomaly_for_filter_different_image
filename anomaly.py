@@ -185,9 +185,7 @@ class ImageAnomalyDetector:
                 score_str = f"{anomaly_score:05.1f}"
                 output_filename = f"{score_str}_{name}.jpg"
                 output_path = os.path.join(output_folder, output_filename)
-                
-                
-                
+
                 # Create and save heatmap visualization
                 self._save_heatmap(original_image, heatmap, output_path, anomaly_score)
     
@@ -246,3 +244,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
